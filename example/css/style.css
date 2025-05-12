@@ -1,0 +1,23 @@
+@page {
+  size: A5;
+}
+
+pre {
+  white-space: pre-wrap;
+  line-break: anywhere;
+}
+
+.footnote {
+  float: footnote;
+}
+
+::footnote-call {
+  content: counter(footnote);
+  font-size: 0.7em;
+  position: relative;
+  inset-block-start: -0.5em;
+}
+
+::footnote-marker {
+  content: counter(footnote) ". ";
+}

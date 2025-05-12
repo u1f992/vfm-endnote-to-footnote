@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "scripts": {
+    "build:endnote": "npx vivliostyle build --output endnote.pdf && magick -density 50 endnote.pdf -background white -alpha remove -append ../endnote.png",
+    "build:footnote": "cross-env FOOTNOTE=1 npx vivliostyle build --output footnote.pdf && magick -density 50 footnote.pdf -background white -alpha remove -append ../footnote.png",
+    "build": "npm run build:endnote && npm run build:footnote"
+  },
+  "dependencies": {
+    "@u1f992/vfm-endnote-to-footnote": "file:..",
+    "@vivliostyle/cli": "^9.1.0"
+  },
+  "devDependencies": {
+    "@vivliostyle/vfm": "^2.2.1",
+    "cross-env": "^7.0.3"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@u1f992/vfm-endnote-to-footnote",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd example && npm run build"
+  },
+  "keywords": [],
+  "author": "Koutaro Mukai",
+  "license": "GPL-3.0",
+  "description": "Transform endnotes into footnotes in Vivliostyle Flavored Markdown.",
+  "type": "module",
+  "dependencies": {
+    "jsdom": "^26.1.0",
+    "rehype": "^11.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  }
+}
